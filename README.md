@@ -8,9 +8,9 @@ A2Z, with a frontend built in React & Redux and a backend built in Django API.
 
 **This App uses a Heroku free plan, so I am afraid that it takes time to load the pages.**
 
-Check out [FRONTEND LIVE DEMO]() here!!
+Check out [FRONTEND LIVE DEMO](https://a2z-frontend-app.herokuapp.com/) here!!
 
-Check out [API LIVE DEMO]() here!!
+Check out [API LIVE DEMO](https://a2z-backend-app.herokuapp.com/) here!!
 
 ## Tech used
 
