@@ -2,9 +2,11 @@ import React from "react";
 import Slider from "react-slick";
 import rightarrow from "../../assets/images/arrowright.png";
 import leftarrow from "../../assets/images/arrowleft.png";
-
+import { useDispatch } from "react-redux";
+import { push } from "connected-react-router";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useHistory } from "react-router";
 import shirt1 from "../../assets/images/shirt-1.png";
 import shirt2 from "../../assets/images/shirt-2.png";
 import shirt3 from "../../assets/images/shirt-3.png";
@@ -12,6 +14,8 @@ import shirt4 from "../../assets/images/shirt-4.png";
 import shirt5 from "../../assets/images/shirt-5.png";
 import shirt6 from "../../assets/images/shirt-6.png";
 const Featured = () => {
+  const dispatch = useDispatch();
+  const history = useHistory();
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -84,6 +88,9 @@ const Featured = () => {
       },
     ],
   };
+  const signupbtn = () => {
+    dispatch(history.push("/sign-up"));
+  };
   return (
     <div class="page-wrapper">
       <h4 class="todaysdetails">Amazing-Today's Deals</h4>
@@ -99,7 +106,14 @@ const Featured = () => {
               <br />
               $19.99
             </h2>
-            <button class="cartbutton">Add To Cart</button>
+            <button
+              class="cartbutton"
+              onClick={() => {
+                history.push("/sign-up");
+              }}
+            >
+              Add To Cart
+            </button>
           </div>
         </div>
         <div class="post">
@@ -113,7 +127,14 @@ const Featured = () => {
               <br />
               $19.99
             </h2>
-            <button class="cartbutton">Add To Cart</button>
+            <button
+              class="cartbutton"
+              onClick={() => {
+                history.push("/sign-up");
+              }}
+            >
+              Add To Cart
+            </button>
           </div>
         </div>
         <div class="post">
@@ -127,7 +148,14 @@ const Featured = () => {
               <br />
               $19.99
             </h2>
-            <button class="cartbutton">Add To Cart</button>
+            <button
+              class="cartbutton"
+              onClick={() => {
+                history.push("/sign-up");
+              }}
+            >
+              Add To Cart
+            </button>
           </div>
         </div>
 
@@ -142,7 +170,14 @@ const Featured = () => {
               <br />
               $19.99
             </h2>
-            <button class="cartbutton">Add To Cart</button>
+            <button
+              class="cartbutton"
+              onClick={() => {
+                history.push("/sign-up");
+              }}
+            >
+              Add To Cart
+            </button>
           </div>
         </div>
         <div class="post">
@@ -156,7 +191,14 @@ const Featured = () => {
               <br />
               $19.99
             </h2>
-            <button class="cartbutton">Add To Cart</button>
+            <button
+              class="cartbutton"
+              onClick={() => {
+                history.push("/sign-up");
+              }}
+            >
+              Add To Cart
+            </button>
           </div>
         </div>
       </Slider>

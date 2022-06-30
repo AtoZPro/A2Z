@@ -78,15 +78,15 @@ export default function SignIn() {
 					</div>
 				</div>
 			</section> */}
-      <Landing />
+      <div className="blur">
+        <Landing />
+      </div>
       <div class="wrap">
         <div class="login-form">
           <div class="form-header">
             <h3 class="signinbox">Log In</h3>
           </div>
-          <h2 class="closebtn" onClick={closeButton}>
-            X
-          </h2>
+
           {/* <!--Email Input--> */}
           <div class="form-group">
             <input
@@ -126,7 +126,7 @@ export default function SignIn() {
           </div>
           <div class="form-footer">
             Not a member yet?
-            <a href="/signup">Sign Up</a>
+            <a href="/sign-up">Sign Up</a>
           </div>
         </div>
       </div>

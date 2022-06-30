@@ -57,7 +57,9 @@ export default function SignUp() {
   return (
     <>
       {/* <Header search={search} /> */}
-      <Landing />
+      <div className="blur">
+        <Landing />
+      </div>
       {/* <section className="main-wrapper">
 				<div className="sign-up">
 					<p className="title">SIGN UP</p>
@@ -123,9 +125,7 @@ export default function SignUp() {
               Create account and <br /> discover the benfits{" "}
             </h3>
           </div>
-          <h2 class="closebtn" onClick={closeButton}>
-            X
-          </h2>
+
           {/* <!--User Name--> */}
           <div class="form-group">
             <input
@@ -189,7 +189,7 @@ export default function SignUp() {
           </div>
           <div class="form-footer">
             Already a member yet?
-            <a href="/sign-in">Sign up</a>
+            <a href="/sign-in">Sign In</a>
           </div>
         </div>
       </div>

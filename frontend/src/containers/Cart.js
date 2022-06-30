@@ -75,12 +75,15 @@ export default function Cart() {
               </h4>
 
               <div class="cost">
-                <button class="cartbutton" onClick={() => history.push("/")}>
+                <button
+                  className="continueshop"
+                  onClick={() => history.push("/")}
+                >
                   Continue Shopping
                 </button>
 
                 <button
-                  class="nextstep"
+                  class="nextstep-button"
                   onClick={() => {
                     history.push("/checkout");
                     dispatch(clearCheckoutOrderErrorAction());

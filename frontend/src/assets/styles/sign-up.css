@@ -618,6 +618,7 @@ img.product {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 85%;
 }
 button.cartbutton {
   background-color: white;

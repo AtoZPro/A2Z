@@ -29,3 +29,19 @@
     background-color: #edf2f3;
     margin-left: 13%;
 }
+.cost {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+button.nextstep-button {
+    background-color: #ff6500;
+    border-radius: 30px;
+    width: 30%;
+}
+button.continueshop {
+    background-color: white;
+    color: black;
+    border: 1px solid;
+    border-radius: 30px;
+}
