@@ -27,28 +27,55 @@ export default function ProductCard(props) {
     dispatch(updateCart({ quantity }, cartId));
   };
   return (
-    <div className="product-card">
-      <img className="product-image" src={image} alt="product" />
-      <div className="product-content">
-        <p className="product-title">{name}</p>
-        {/* <p className="product-description">{description}</p> */}
+    <>
+      <div className="product-card">
+        <img className="product-image" src={image} alt="product" />
+        <div className="product-content">
+          <p className="product-title">{name}</p>
+          {/* <p className="product-description">{description}</p> */}
+        </div>
+        <div className="price-content">
+          <p className="product-price">${price}</p>
+          {quantity > 0 ? (
+            <div className="added-cart">
+              <span onClick={decreaseCart}> - </span>
+              <span className="margin-top-4"> {quantity} </span>
+              <span onClick={increaseCart} className="margin-top-4">
+                +
+              </span>
+            </div>
+          ) : (
+            <button onClick={addToCart} className="add-cart-btn">
+              ADD TO CART
+            </button>
+          )}
+        </div>
       </div>
-      <div className="price-content">
-        <p className="product-price">${price}</p>
-        {quantity > 0 ? (
-          <div className="added-cart">
-            <span onClick={decreaseCart}> - </span>
-            <span className="margin-top-4"> {quantity} </span>
-            <span onClick={increaseCart} className="margin-top-4">
-              +
-            </span>
+
+      {/* <section class="grid">
+        <div class="card">
+          <img src={image} alt="" />
+          <div class="info">
+            <p>
+              {name} <br />${price}
+            </p>
+            {quantity > 0 ? (
+              <div className="added-cart">
+                <span onClick={decreaseCart}> - </span>
+                <span className="margin-top-4"> {quantity} </span>
+                <span onClick={increaseCart} className="margin-top-4">
+                  +
+                </span>
+              </div>
+            ) : (
+              <button onClick={addToCart} className="add-cart-btn">
+                ADD TO CART
+              </button>
+            )}
+            
           </div>
-        ) : (
-          <button onClick={addToCart} className="add-cart-btn">
-            Add +
-          </button>
-        )}
-      </div>
-    </div>
+        </div>
+      </section> */}
+    </>
   );
 }

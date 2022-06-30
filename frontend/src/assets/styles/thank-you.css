@@ -17,3 +17,15 @@
     margin: 5px 0;
     font-size: 22px;
 }
+.slick-slide img {
+    display: block;
+    height: 30vh;
+    width: 76%;
+    position: relative;
+    left: 11%;
+    padding: 9%;
+}
+.greybackground {
+    background-color: #edf2f3;
+    margin-left: 13%;
+}

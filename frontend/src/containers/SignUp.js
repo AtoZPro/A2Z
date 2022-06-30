@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, useLocation } from "react-router";
 import { Link } from "react-router-dom";
-import Landing from "../containers/Landing";
+import Landing from "./Landing.js";
 
 import Footer from "../components/default/Footer";
 import Header from "../components/default/Header";
@@ -56,7 +56,7 @@ export default function SignUp() {
 
   return (
     <>
-      <Header search={search} />
+      {/* <Header search={search} /> */}
       <Landing />
       {/* <section className="main-wrapper">
 				<div className="sign-up">
@@ -189,7 +189,7 @@ export default function SignUp() {
           </div>
           <div class="form-footer">
             Already a member yet?
-            <a href="/signin">Sign up</a>
+            <a href="/sign-in">Sign up</a>
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ if (
 ) {
   baseURL = process.env.REACT_APP_API_BASE_URL;
 } else {
-  baseURL = "http://127.0.0.1:8001/";
+  baseURL = "http://127.0.0.1:8002/";
 }
 
 const api = axios.create({

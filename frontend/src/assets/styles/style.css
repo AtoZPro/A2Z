@@ -181,19 +181,18 @@ input:focus {
 }
 
 .custom-search-input {
-	height: 42px;
-	width: 100%;
-	border-radius: 14px;
-	color: #fff;
-	border: 1px solid #fff;
-	background-color: #7e7e7e;
-	padding: 10px 50px;
-	font-size: 14px;
-	display: block;
+	    height: 42px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px;
+    background-color: white;
+    padding: 10px 50px;
+    font-size: 14px;
+    display: block;
 }
 
 .custom-search-input::placeholder {
-	color: #fff;
+	color: grey;
 }
 
 .custom-btn {

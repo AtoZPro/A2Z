@@ -99,7 +99,7 @@ export default function Homepage() {
                 onChange={(e) => setType(e.target.value)}
                 className="gender-select"
               >
-                <option value="">FILTER BY GENDER</option>
+                <option value="">FILTER BY TYPE</option>
                 <option value="male">Men's</option>
                 <option value="female">Women's</option>
               </select>
